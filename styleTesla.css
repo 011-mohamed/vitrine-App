@@ -1,0 +1,94 @@
+
+.ventes {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.ventes .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ventes h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.voiture-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.voiture-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(50% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.voiture-album {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.voiture-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.voiture-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.voiture-item:hover {
+    transform: translateY(-10px);
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover; 
+    display: block; 
+}

@@ -5,38 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Exemple Entreprise</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleTesla.css">
     <link rel="icon" href="images/LOGO-Tesla.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="portfolio">
-            <h1>Notre Produits</h1>
-            <p>Découvrez nos réalisations récentes qui illustrent notre expertise et notre créativité.</p>
-            <div class="portfolio-items">
-                <div class="portfolio-item">
-                    <img src="images/tesla-model-x.jpg" alt="model X">
-                    <p>Model X</p>
+    <section class="ventes">
+        <div class="container">
+            
+            <div class="voiture-grid">
+                <div class="voiture-item">
+                    <div class="voiture-album">
+                        <div class="carousel">
+                            <img src="images/cybertruck/1.jpg" alt="Tesla Cybertruck">
+                            <img src="images/cybertruck/2.jpg" alt="Tesla Cybertruck Side">
+                            <img src="images/cybertruck/3.jpg" alt="Tesla Cybertruck Interior">
+                        </div>
+                    </div>
+                    <h3>Tesla Cybertruck</h3>
+                    <p>Le Tesla Cybertruck est un véhicule tout-terrain robuste, conçu pour les aventures les plus extrêmes.</p>
                 </div>
-                <div class="portfolio-item">
-                    <img src="images/tesla-model-3-performance.jpg" alt="model 3">
-                    <p>Model 3</p>
+                <div class="voiture-item">
+                    <div class="voiture-album">
+                        <div class="carousel">
+                            <img src="images/modele x/3.jpg" alt="Tesla Model X">
+                            <img src="images/modele x/4.jpg" alt="Tesla Model X Side">
+                            <img src="images/modele x/2.jpg" alt="Tesla Model X Interior">
+                        </div>
+                    </div>
+                    <h3>Tesla Model X</h3>
+                    <p>Le Tesla Model X est un SUV électrique alliant luxe, performance et sécurité.</p>
+                </div>
+                <div class="voiture-item">
+                    <div class="voiture-album">
+                        <div class="carousel">
+                            <img src="images/modele3/3.jpg" alt="Tesla Model 3">
+                            <img src="images/modele3/2.jpg" alt="Tesla Model 3 Side">
+                            <img src="images/modele3/1.jpg" alt="Tesla Model 3 Interior">
+                        </div>
+                    </div>
+                    <h3>Tesla Model 3</h3>
+                    <p>Le Tesla Model 3 est une berline compacte et abordable, offrant une autonomie exceptionnelle et des performances élevées.</p>
+                </div>
+                <div class="voiture-item">
+                    <div class="voiture-album">
+                        <div class="carousel">
+                            <img src="images/Tesla Roadster/2.jpeg" alt="Tesla Roadster">
+                            <img src="images/Tesla Roadster/2.jpeg" alt="Tesla Roadster Side">
+                            <img src="images/Tesla Roadster/3.jpg" alt="Tesla Roadster Interior">
+                        </div>
+                    </div>
+                    <h3>Tesla Roadster</h3>
+                    <p>Le Tesla Roadster est une voiture de sport électrique offrant des performances incroyables et une technologie de pointe.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 vetrine Entreprise. <a href="https://github.com/votre-nom">GitHub</a></p>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+
+                    <li>&copy; 2024 vetrine Entreprise. <a
+                            href="https://github.com/011-mohamed/vitrine-App/tree/master">GitHub</a></li>
+
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
