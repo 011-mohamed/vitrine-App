@@ -1,94 +1,147 @@
 
-.ventes {
-    background-color: #f4f4f4;
-    padding: 40px 0;
-    text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.ventes .container {
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.ventes h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
-.voiture-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.voiture-item {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    flex: 1 1 calc(50% - 40px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.voiture-album {
-    position: relative;
-    width: 100%;
+.navbar {
+    background-color: #000000;
     overflow: hidden;
-    border-radius: 8px;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    max-width: 100%;
-    height: auto;
-    flex-shrink: 0;
-}
-
-.voiture-item h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.voiture-item p {
-    font-size: 1rem;
-    color: #666;
-}
-
-.voiture-item:hover {
-    transform: translateY(-10px);
-}
-
-.carousel-buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
 }
 
-.carousel-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
+.navbar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
     color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #575757;
+}
+
+.order-now-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+.order-now-button:hover {
+    background-color: darkred;
+}
+
+.products-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.products-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-card h3 {
+    margin: 20px 0 10px;
+}
+
+.product-card p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
     padding: 10px;
-    cursor: pointer;
+    min-width: 250px;
 }
 
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.footer-section h4 {
+    margin-bottom: 20px;
 }
 
-.carousel img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 8px; 
-    object-fit: cover; 
-    display: block; 
+.footer-section p,
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-section .fab {
+    font-size: 1.5em;
+    margin-right: 10px;
 }
